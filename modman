@@ -1,0 +1,5 @@
+# EE modules via modman
+
+system/expressionengine/third_party/autocomplete_search      system/expressionengine/third_party/autocomplete_search/
+system/expressionengine/templates/default_site/autocomplete_search.group      system/expressionengine/templates/default_site/autocomplete_search.group/
+themes/third_party/autocomplete_search/      themes/third_party/autocomplete_search/
