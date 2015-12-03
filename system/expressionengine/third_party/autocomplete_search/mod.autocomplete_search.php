@@ -61,7 +61,10 @@ class Autocomplete_search {
       $join = $this->EE->TMPL->fetch_param('join');
       return implode('"' . $join . '"', explode($delimiter, mb_ereg_replace("/[^ \w]+/", "", $value)));
   }
-
+  /**
+   * Decodes HTML ents & strips tags
+   * @return string Cleaned string
+   */
   public function clean()
   {
     $value = $this->EE->TMPL->tagdata;

@@ -35,6 +35,7 @@ class Autocomplete_search_lib {
    * @return string Base64 encoded array
    */
   public function build_meta_array() {
+      
       $meta = array(
           'status'				=> $this->EE->TMPL->fetch_param('status', ''),
           'channel'				=> $this->EE->TMPL->fetch_param('channel', ''),

@@ -4,21 +4,7 @@ jQuery(document).ready(function($) {
         datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
         queryTokenizer: Bloodhound.tokenizers.whitespace,
         remote: {
-            url: '/autocomplete_search/?keywords=%QUERY'
-            // ,replace: function(url, query) {
-            //     console.log('hello!');
-            //     return url + "#" + query;
-            // }
-            // ,prepare: function(jqXhr, settings){
-            //         console.log('hello!');
-            //         settings.data = $.param({q: queryInput.val()})
-            //     // },
-            //     // data: {
-            //     //     query: 'TEST'
-            //     // }
-            //     // ,type: "POST"
-            //
-            // }
+            url: '/autocomplete_search?keywords=%QUERY'
             ,wildcard: '%QUERY'
         }
     });
@@ -26,7 +12,7 @@ jQuery(document).ready(function($) {
     $('#keywords').typeahead({
         hint: true
         ,highlight: true
-        ,minLength: 3
+        ,minLength: 2
     },
     {
       name: 'best-guess'
