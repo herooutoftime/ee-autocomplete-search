@@ -1,3 +1,9 @@
+nav.main-navigation .navigation-item.scrollable .navigation-overlay {
+  overflow-y: visible;
+  max-height: none;
+}
+
+
 .twitter-typeahead {
   width: 100%;
 }
