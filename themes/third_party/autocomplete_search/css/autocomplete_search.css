@@ -34,7 +34,7 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 	      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;*/
 }
 .tt-menu {
-	max-width: 95%;
+	width: 95%;
 	margin-top: 2px;
 	padding: 5px 0;
 	background-color: #ffffff;
