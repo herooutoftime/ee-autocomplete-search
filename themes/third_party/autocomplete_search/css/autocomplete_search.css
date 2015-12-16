@@ -13,7 +13,7 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 }
 
 .tt-input, .tt-hint {
-  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .tt-hint {
@@ -33,7 +33,7 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 	      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;*/
 }
 .tt-menu {
-	width: 100%;
+	width: 97%;
   max-height: 200px;
   overflow-y: auto;
 	margin-top: 2px;
