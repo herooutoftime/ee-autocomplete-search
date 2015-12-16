@@ -3,6 +3,10 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
   max-height: none;
 }
 
+.tt-menu {
+  max-height: 200px;
+  overflow-y: auto;
+}
 
 .twitter-typeahead {
   width: 100%;
