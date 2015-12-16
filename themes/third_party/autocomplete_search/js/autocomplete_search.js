@@ -22,6 +22,10 @@ jQuery(document).ready(function($) {
       ,templates: {
           suggestion: function(e) {
               return '<div>'+ e.value + '</div>';
+          },
+          empty: function(ctx) {
+            console.log(ctx);
+            return ctx.query;
           }
       }
     });
