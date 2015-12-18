@@ -16,6 +16,10 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
   max-width: 100% !important;
 }
 
+.tt-input-loading {
+   background: #eee url('../assets/ajax-loader.gif') no-repeat center center !important;
+}
+
 .tt-hint {
 	display: block;
 	height: 26px;
