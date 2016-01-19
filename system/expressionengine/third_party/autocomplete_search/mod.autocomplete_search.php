@@ -71,10 +71,24 @@ class Autocomplete_search {
     return strip_tags(html_entity_decode($this->EE->TMPL->tagdata));
   }
 
-  /**
-   * Start on your custom code here...
-   */
+  public function url()
+  {
+    $original = $this->EE->TMPL->fetch_param('original');
+    $channel_id = $this->EE->TMPL->fetch_param('channel');
+    $entry_id = $this->EE->TMPL->fetch_param('entry_id');
+    $file_url = explode(',', $this->EE->TMPL->fetch_param('file_url'));
 
+    switch ($channel_id) {
+      case 3:
+        $url = $file_url[0];
+        break;
+
+      default:
+        $url = $original;
+        break;
+    }
+    return $url;
+  }
 }
 /* End of file mod.freeform_unique_email.php */
 /* Location: /system/expressionengine/third_party/freeform_unique_email/mod.freeform_unique_email.php */
