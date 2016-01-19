@@ -54,7 +54,8 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 .tt-suggestion {
 	display: block;
 	padding: 3px 20px;
-    color: #000;
+  color: #000;
+  clear: both;
 }
 
 .tt-suggestion:hover,
