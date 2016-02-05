@@ -36,6 +36,11 @@ class Autocomplete_search {
     $this->EE =& get_instance();
     $this->EE->load->add_package_path(PATH_THIRD.'autocomplete_search/');
     $this->EE->load->library('autocomplete_search_lib');
+
+    $this->EE->load->add_package_path(PATH_THIRD.'transcribe/');
+    // $this->EE->load->model('transcribe');
+    if (class_exists('Transcribe') == FALSE) require(PATH_THIRD.'transcribe/mod.transcribe.php');
+    $this->transcribe = new Transcribe();
   }
 
   /**
@@ -89,6 +94,19 @@ class Autocomplete_search {
     }
     return $url;
   }
+
+  public function translate()
+  {
+    $name = $this->EE->TMPL->fetch_param('name');
+    $default = $this->EE->TMPL->fetch_param('default');
+
+    $translated = $this->transcribe->replace($name);
+    if($translated == 'Transcribe: Translation not found.')
+      return $default;
+
+    return $translated;
+  }
+
 }
 /* End of file mod.freeform_unique_email.php */
 /* Location: /system/expressionengine/third_party/freeform_unique_email/mod.freeform_unique_email.php */
