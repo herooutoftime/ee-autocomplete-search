@@ -1,10 +1,10 @@
 nav.main-navigation .navigation-item.scrollable .navigation-overlay {
-  overflow-y: visible;
-  max-height: none;
+	overflow-y: visible;
+	max-height: none;
 }
 
 .twitter-typeahead {
-  width: 100%;
+	width: 100%;
 }
 
 .twitter-typeahead .tt-query,
@@ -13,11 +13,11 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 }
 
 .tt-input, .tt-hint {
-  max-width: 100% !important;
+	max-width: 100% !important;
 }
 
 .tt-input-loading {
-   background: #eee url('../assets/ajax-loader.gif') no-repeat center center !important;
+	background: #eee url('../assets/ajax-loader.gif') no-repeat center center !important;
 }
 
 .tt-hint {
@@ -38,8 +38,8 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 }
 .tt-menu {
 	width: 97%;
-  max-height: 200px;
-  overflow-y: auto;
+	max-height: 200px;
+	overflow-y: auto;
 	margin-top: 2px;
 	padding: 5px 0;
 	background-color: #ffffff;
@@ -54,8 +54,8 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 .tt-suggestion {
 	display: block;
 	padding: 3px 20px;
-  color: #000;
-  clear: both;
+	color: #000;
+	clear: both;
 }
 
 .tt-suggestion:hover,
@@ -70,6 +70,11 @@ nav.main-navigation .navigation-item.scrollable .navigation-overlay {
 	margin: 0;
 }
 .tt-suggestion small {
-  float: right;
-  font-style: italic;
+	float: right;
+	font-style: italic;
+}
+
+.tt-empty {
+	color: #000;
+	padding: 3px 20px;
 }

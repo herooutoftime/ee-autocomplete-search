@@ -9,7 +9,7 @@
     "crumb": "{exp:structure:breadcrumb uri="/{auto_path}/" here_as_title="yes"}",
     "tokens": ["{exp:autocomplete_search:split value="{title}" delimiter=" " join=","}"],
     "thumb": "{images}",
-    "score": "{weight}"
+    "weight": "{weight}"
 }{if count != total_results},{/if}
 {/exp:search:search_results}
 ]
